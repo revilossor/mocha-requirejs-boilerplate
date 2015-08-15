@@ -9,16 +9,16 @@ requirejs.config({
 describe('Card Testing', function() {
     // module loading
     // Load modules with requirejs before tests
-    var Card, Victory;
+    //var Card, Victory;
     before(function(done) {
-        requirejs(['card', 'victory'], function(card, victory) {
-            Card = card;
-            Victory = victory;
+        requirejs([/*'card', 'victory'*/], function(/*card, victory*/) {
+            //Card = card;
+            //Victory = victory;
             done();
         });
     });
 
-    describe('#instanciation', function(){
+/*    describe('#instanciation', function(){
         it('should work without problems', function(){
             Card.should.have.property('new');
             var c1 = Card.new(1);
@@ -48,5 +48,5 @@ describe('Card Testing', function() {
             e.type.should.have.length(1);
             e.type.should.containEql('victory');
         });
-    });
+    });*/
 });
